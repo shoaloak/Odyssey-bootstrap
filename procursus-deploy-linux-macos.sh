@@ -109,7 +109,7 @@ curl -sLOOOOO https://github.com/coolstar/Odyssey-bootstrap/raw/master/bootstrap
 if [ ! "${ARM}" = yes ]; then
 	echo "(2) Copying resources to your device..."
 	echo "Default password is: alpine"
-	scp -qP28605 -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null" bootstrap_1500.tar.gz \
+	scp -qP28605 -O -o "StrictHostKeyChecking no" -o "UserKnownHostsFile=/dev/null" bootstrap_1500.tar.gz \
 		bootstrap_1600.tar.gz bootstrap_1700.tar.gz \
 		org.coolstar.sileo_2.3_iphoneos-arm.deb \
 		org.swift.libswift_5.0-electra2_iphoneos-arm.deb \
